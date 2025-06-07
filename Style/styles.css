@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    text-align: first baseline;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+
+
+}
+
+.header-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(64, 64, 64, 0.514), rgba(118, 118, 118, 0.411));
+    z-index: -1;
+}
+
+.head {
+    margin: 0 20%;
+    display: flex;
+    padding: 2rem 0 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* separa extremos */
+    gap: 2rem;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    width: 12vw;
+    height: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    display: flex;
+
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-contacto {
+    background-color: #FF6B00;
+    color: black;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.head-container {
+
+    color: white;
+    position: relative;
+    padding: 4rem 0 0 0;
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: first baseline;
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+}
+
+button:hover {
+    background-color: #FF6B00;
+    color: black;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-asesoria {
+    margin: 0 20%;
+    background-color: #FF6B00;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.head-semi-footer {
+    margin-top: 5%;
+}
+
+.head-footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave svg {
+  width: 100%;
+  height: 100%;
+}
+.wave1 {
+    z-index: 1;
+}
+
+.wave2 {
+    z-index: 2;
+}
