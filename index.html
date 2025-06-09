@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Litis Legal</title>
     <link rel="stylesheet" href="Style/styles.css">
-
+    <script src="/js/tabsDisplay.js"></script>
+    <script src="/js/btnColor.js"></script>
 </head>
 
 <body>
@@ -17,14 +18,14 @@
             <img src="/images/logo.png" alt="logo" class="logo">
 
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Nosotros</a>
+                <a href="#" onclick="showViews('.inicio-view'); changeButtonColor(this);" class="btn-menu" id="btn-inicio" style="color: #FF6B00;">Inicio</a>
+                <a href="#" onclick="showViews('.servicios-view'); changeButtonColor(this);" class="btn-menu" id="btn-servicios">Servicios</a>
+                <a href="#" onclick="showViews('.nosotros-view'); changeButtonColor(this);" class="btn-menu" id="btn-nosotros">Nosotros</a>
                 <button href="#" class="btn-contacto">Contáctanos</button>
             </nav>
         </div>
 
-        <div class="inicio">
+        <div class="inicio-view view">
             <img src="/images/PORTADA.png" alt="portada" class="header-image">
             <div class="overlay"></div>
 
@@ -37,9 +38,21 @@
 
         </div>
 
+        <div class="servicios-view view" style="display: none;">
+            <img src="/images/Services-cover.png" alt="portada" class="header-image-servicios" style="width: 100%; height: 70%;">
+            <div class="overlay-servicios"></div>
+            <div class="head-container-servicios">
+                <h1 class="tittle tittle-servicios">Servicios legales efectivos con resultados concretos para tu tranquilidad</h1>
+            </div>
+            <div class="text">
+                <p>En Litis Legal contamos con un conjunto de servicios estratégicos enfocados en resguardar tus intereses y maximizar la recuperación de tus activos.</p>
+            </div>
+        </div>
+        <div class="nosotros-view view" style="display: none;"></div>
+
     </header>
 
-    <section class="body inicio">
+    <section class="body inicio-view view">
         <!-- Servicios -->
         <section class="servicios">
 
@@ -87,6 +100,25 @@
         </section>
     </section>
 
+    <section class="servicios-view view" style="display: none;">
+        <div class="service">
+            <img src="/images/service1.png" alt="" style="margin-right: 10%;">
+            <div class="service-content">
+                <h2>Consultoría Legal Integral</h2>
+                <p>Somos tu aliado legal de confianza. Brindamos una consultoría integral que cubre desde el análisis claro de fundamentos jurídicos hasta la atención oportuna de tus consultas diarias. Te acompañamos de forma continua para que cada paso que des cuente con un respaldo legal sólido y segurto.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-content">
+                <h2>Asesoría a Entidades Públicas</h2>
+                <p>Ofrecemos soluciones juridicas y estrategicas diseñadas especialmente para instituciones del sector publico, con el objetivo de fortalecer su gestión legal, mejorar la eficiencia operativa y garantizar el cumplimiento normativo. Nuestro enfoque permite a las entidades estatales tomar decisiones informadas, reducir riesgos legales y optimizar sus procesos de manera sostenible.</p>
+            </div>
+            <img src="/images/service2.png" alt="" style="margin-left: 10%;">
+        </div>
+        <div class="service"></div>
+    </section>
+
+    <section class="nosotros-view view" style="display: none;"></section>
 
     <!-- Footer -->
     <footer>
@@ -113,11 +145,6 @@
                     <li>Política de Privacidad</li>
                     <li>Términos y condiciones</li>
                 </ul>
-            </div>
-            <div class="redes">
-                <img src="/images/Facebook.png" alt="">
-                <img src="/images/X.png" alt="">
-                <img src="/images/Instagram.png" alt="">
             </div>
         </div>
         <p class="copy">© 2025 Litis Legal</p>

@@ -23,6 +23,16 @@ header {
     overflow: hidden;
 
 }
+.btn-menu:hover {
+    color: #FF6B00;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
 .header-image {
     width: 100%;
@@ -35,10 +45,79 @@ header {
     z-index: -1;
 }
 
+.header-servicios {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-image-servicios {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: top;  /* 👈 Fuerza a mostrar la parte superior */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.head-container-servicios {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.overlay-servicios {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to bottom, rgba(64, 64, 64, 0.514), rgba(118, 118, 118, 0.411));
+    z-index: -1;
+}
+
+.tittle-servicios {
+    margin: 0 10%;
+    padding: 2rem 0;
+
+}
+
+.servicios-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 10%;
+}
+.text{
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    color: black;
+}
 .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(64, 64, 64, 0.514), rgba(118, 118, 118, 0.411));
+    background: linear-gradient(to bottom, rgba(64, 64, 64, 0.514), rgba(118, 118, 118, 0.411));
     z-index: -1;
 }
 
@@ -224,6 +303,36 @@ button:hover {
 
 }
 
+.service{
+    color: #444444;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    margin: 5% 5%;
+}
+.service img {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 15px;
+}
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.service-content h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    align-items: first baseline;
+
+}
+
 footer {
     display: flex;
     background-color: #1d2a63;
@@ -258,21 +367,4 @@ footer {
 .copy {
     margin-top: 1rem;
     font-size: 0.8rem;
-}
-
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: baseline;
-    margin-right: 5%;
-}
-.redes img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0 0.5rem;
-    background-color: white;
-    border-radius: 10%;
-    padding: 2%;
-    
 }
