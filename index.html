@@ -1,184 +1,385 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Litis Legal</title>
-    <link rel="stylesheet" href="Style/styles.css">
+    <link rel="stylesheet" href="Style/styles.css" />
     <script src="/js/tabsDisplay.js"></script>
     <script src="/js/btnColor.js"></script>
-</head>
+    <link rel="icon" href="/images/logo.png" type="image/png" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header>
-        <div class="head">
-            <img src="/images/logo.png" alt="logo" class="logo">
+      <div class="head">
+        <img src="/images/logo.png" alt="logo" class="logo" />
 
-            <nav>
-                <a href="#" onclick="showViews('.inicio-view'); changeButtonColor(this);" class="btn-menu" id="btn-inicio" style="color: #FF6B00;">Inicio</a>
-                <a href="#" onclick="showViews('.servicios-view'); changeButtonColor(this);" class="btn-menu" id="btn-servicios">Servicios</a>
-                <a href="#" onclick="showViews('.nosotros-view'); changeButtonColor(this);" class="btn-menu" id="btn-nosotros">Nosotros</a>
-                <button href="#" class="btn-contacto">Contáctanos</button>
-            </nav>
+        <nav>
+          <a
+            href="#"
+            onclick="showViews('.inicio-view'); changeButtonColor(this);"
+            class="btn-menu"
+            id="btn-inicio"
+            style="color: #ff6b00"
+            >Inicio</a
+          >
+          <a
+            href="#"
+            onclick="showViews('.servicios-view'); changeButtonColor(this);"
+            class="btn-menu"
+            id="btn-servicios"
+            >Servicios</a
+          >
+          <a
+            href="#"
+            onclick="showViews('.nosotros-view'); changeButtonColor(this);"
+            class="btn-menu"
+            id="btn-nosotros"
+            >Nosotros</a
+          >
+          <button href="#" class="btn-contacto">Contáctanos</button>
+        </nav>
+      </div>
+
+      <div class="inicio-view view">
+        <img src="/images/PORTADA.png" alt="portada" class="header-image" />
+        <div class="overlay"></div>
+
+        <div class="head-container">
+          <h1 class="tittle">
+            Confianza,<br />Resultados Y<br />Respaldo Legal<br />En Cada Paso
+          </h1>
         </div>
-
-        <div class="inicio-view view">
-            <img src="/images/PORTADA.png" alt="portada" class="header-image">
-            <div class="overlay"></div>
-
-            <div class="head-container">
-                <h1 class="tittle">Confianza,<br>Resultados Y<br>Respaldo Legal<br>En Cada Paso</h1>
-            </div>
-            <div class="head-semi-footer">
-                <a href="#" class="btn-asesoria">Solicita una asesoría</a>
-            </div>
-
+        <div class="head-semi-footer">
+          <a href="#" class="btn-asesoria">Solicita una asesoría</a>
         </div>
+      </div>
 
-        <div class="servicios-view view" style="display: none;">
-            <img src="/images/Services-cover.png" alt="portada" class="header-image-servicios" style="width: 100%; height: 70%;">
-            <div class="overlay-servicios"></div>
-            <div class="head-container-servicios">
-                <h1 class="tittle tittle-servicios">Servicios legales efectivos con resultados concretos para tu tranquilidad</h1>
-            </div>
-            <div class="text">
-                <p>En Litis Legal contamos con un conjunto de servicios estratégicos enfocados en resguardar tus intereses y maximizar la recuperación de tus activos.</p>
-            </div>
+      <div class="servicios-view view" style="display: none; height: 70vh">
+        <img
+          src="/images/Services-cover.png"
+          alt="portada"
+          class="header-image-servicios"
+          style="width: 100%; height: 70%"
+        />
+        <div class="overlay-servicios"></div>
+        <div class="head-container-servicios">
+          <h1 class="tittle tittle-servicios">
+            Servicios legales efectivos con resultados concretos para tu
+            tranquilidad
+          </h1>
         </div>
-        <div class="nosotros-view view" style="display: none;">
-            <img src="/images/portada-nosotros.png" alt="portada" class="header-image-nosotros" style="width: 100%; height: 70%;">
-            <div class="overlay-nosotros"></div>
-            <div class="head-container-nosotros">
-                <h1 class="tittle tittle-nosotros">Litis Legal: Confianza,<br> estrategia y <br> responsabilidad en <br> cada decisión</h1>
-                <br>
-                <p>
-                    Promovemos respuestas efectivas y duraderas respaldadas <br>
-                    por un equipo dedicado y orientado a entregar valor <br>
-                    tangible.
-                </p>
-            </div>
+        <div class="text">
+          <p>
+            En Litis Legal contamos con un conjunto de servicios estratégicos
+            enfocados en resguardar tus intereses y maximizar la recuperación de
+            tus activos.
+          </p>
         </div>
-
+      </div>
+      <div class="nosotros-view view" style="display: none">
+        <img
+          src="/images/portada-nosotros.png"
+          alt="portada"
+          class="header-image-nosotros"
+          style="width: 100%; height: 70%"
+        />
+        <div class="overlay-nosotros"></div>
+        <div class="head-container-nosotros">
+          <h1 class="tittle tittle-nosotros">
+            Litis Legal: Confianza,<br />
+            estrategia y <br />
+            responsabilidad en <br />
+            cada decisión
+          </h1>
+          <br />
+          <p>
+            Promovemos respuestas efectivas y duraderas respaldadas <br />
+            por un equipo dedicado y orientado a entregar valor <br />
+            tangible.
+          </p>
+        </div>
+      </div>
     </header>
 
     <section class="body inicio-view view">
-        <!-- Servicios -->
-        <section class="servicios">
+      <!-- Servicios -->
+      <section class="servicios">
+        <div class="item">
+          <img src="/images/Pin.png" alt="pin" class="icon-pin" />
+          <p>Consultoría Legal Integral</p>
+        </div>
+        <div class="item">
+          <img src="/images/Home.png" alt="Home" />
+          <p>Asesoría a Entidades Públicas</p>
+        </div>
+        <div class="item">
+          <img src="/images/Money.png" alt="Money" />
+          <p>Cobro Preventivo y Judicial</p>
+        </div>
+      </section>
 
-            <div class="item">
-                <img src="/images/Pin.png" alt="pin" class="icon-pin">
-                <p>Consultoría Legal Integral</p>
-            </div>
-            <div class="item">
-                <img src="/images/Home.png" alt="Home">
-                <p>Asesoría a Entidades Públicas</p>
-            </div>
-            <div class="item">
-                <img src="/images/Money.png" alt="Money">
-                <p>Cobro Preventivo y Judicial</p>
-            </div>
-        </section>
+      <!-- Info Principal -->
+      <section class="info">
+        <div class="barra">
+          <p class="p-info">CONFIANZA Y SEGURIDAD</p>
+          <p class="p-info">ENFOQUE PROACTIVO</p>
+          <a href="https://wa.me/+573112820346" target="_blank" class="btn-wp"
+            ><img
+              src="/images/whatsapp.png"
+              width="15%"
+              height="15%"
+              margin-right="100px"
+            />
+            311 282-0346</a
+          >
+        </div>
 
-        <!-- Info Principal -->
-        <section class="info">
-            <div class="barra">
-                <p class="p-info">CONFIANZA Y SEGURIDAD</p>
-                <p class="p-info">ENFOQUE PROACTIVO</p>
-                <a href="https://wa.me/+573112820346" target="_blank" class="btn-wp"><img src="/images/whatsapp.png"
-                        width="15%" height="15%" margin-right="100px"> 311 282-0346</a>
+        <div class="mision-vision">
+          <p class="misionTitle">Nosotros</p>
+          <br />
+          <div class="mision-vision-content">
+            <div>
+              <p>Misión</p>
+              <br />
+              <p>
+                Ofrecer soluciones integrales y efectivas en la gestión de
+                cobranza, acompañado a nuestros clientes en la recuperación de
+                sus activos y minimizando el impacto de la morosidad
+              </p>
             </div>
-
-            <div class="mision-vision">
-                <p class="misionTitle">Nosotros</p>
-                <br>
-                <div class="mision-vision-content">
-                    <div>
-                        <p>Misión</p>
-                        <br>
-                        <p>Ofrecer soluciones integrales y efectivas en la gestión de cobranza, acompañado a nuestros
-                            clientes en la recuperación de sus activos y minimizando el impacto de la morosidad</p>
-                    </div>
-                    <div>
-                        <p>Visión</p>
-                        <br>
-                        <p>Transformar la gestión de cobranza a través de la innovación constante en nuestras
-                            estrategias y tecnologias, adaptandonós a las necesidades cambiantes del mercado </p>
-                    </div>
-                </div>
+            <div>
+              <p>Visión</p>
+              <br />
+              <p>
+                Transformar la gestión de cobranza a través de la innovación
+                constante en nuestras estrategias y tecnologias, adaptandonós a
+                las necesidades cambiantes del mercado
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="servicios-view view" style="display: none;">
-        <div class="service">
-            <img src="/images/service1.png" alt="" style="margin-right: 10%;">
-            <div class="service-content">
-                <h2>Consultoría Legal Integral</h2>
-                <p>Somos tu aliado legal de confianza. Brindamos una consultoría integral que cubre desde el análisis claro de fundamentos jurídicos hasta la atención oportuna de tus consultas diarias. Te acompañamos de forma continua para que cada paso que des cuente con un respaldo legal sólido y segurto.</p>
-            </div>
+    <section class="servicios-view view" style="display: none">
+      <div class="service">
+        <img src="/images/service1.png" alt="" style="margin-right: 10%" />
+        <div class="service-content">
+          <h2>Consultoría Legal Integral</h2>
+          <br />
+          <p>
+            Somos tu aliado legal de confianza. Brindamos una consultoría
+            integral que cubre desde el análisis claro de fundamentos jurídicos
+            hasta la atención oportuna de tus consultas diarias. Te acompañamos
+            de forma continua para que cada paso que des cuente con un respaldo
+            legal sólido y seguro.
+          </p>
         </div>
-        <div class="service">
-            <div class="service-content">
-                <h2>Asesoría a Entidades Públicas</h2>
-                <p>Ofrecemos soluciones juridicas y estrategicas diseñadas especialmente para instituciones del sector publico, con el objetivo de fortalecer su gestión legal, mejorar la eficiencia operativa y garantizar el cumplimiento normativo. Nuestro enfoque permite a las entidades estatales tomar decisiones informadas, reducir riesgos legales y optimizar sus procesos de manera sostenible.</p>
-            </div>
-            <img src="/images/service2.png" alt="" style="margin-left: 10%;">
+      </div>
+      <div class="service">
+        <div class="service-content">
+          <h2>Asesoría a Entidades Públicas</h2>
+          <p>
+            Ofrecemos soluciones juridicas y estrategicas diseñadas
+            especialmente para instituciones del sector publico, con el objetivo
+            de fortalecer su gestión legal, mejorar la eficiencia operativa y
+            garantizar el cumplimiento normativo. Nuestro enfoque permite a las
+            entidades estatales tomar decisiones informadas, reducir riesgos
+            legales y optimizar sus procesos de manera sostenible.
+          </p>
         </div>
-        <div class="service service-last">
-            <div class="service-content">
-                <h2>Cobro Preventivo y Judicial</h2>
-                <p>Expertos en gestión de cartera. Hemos administrado más de 300.000 comunidades para entidades como Tránsito del Atlántico.</p>
-                <p>Secciones complementarias con ejemplos reales y métricas de impacto.</p>
-                <br>
-                <a href="" class="btn-Transito">Transito de atlantico</a>
-            </div>
-            <div class="service-image">
-                <img src="/images/credit_card.jpg" alt="">
-                <div class="service-subimage">
-                    <img src="/images/service3.png" alt="" style="margin-bottom: 0.5vw;">
-                    <img src="/images/planing.jpg" alt="" style="margin-top: 0.5vw;">
-                </div>
-            </div>
+        <img src="/images/service2.png" alt="" style="margin-left: 10%" />
+      </div>
+      <div class="service service-last">
+        <div class="service-content">
+          <h2>Cobro Preventivo y Judicial</h2>
+          <p>
+            Expertos en gestión de cartera. Hemos administrado más de 300.000
+            comunidades para entidades como Tránsito del Atlántico.
+          </p>
+          <p>
+            Secciones complementarias con ejemplos reales y métricas de impacto.
+          </p>
+          <br />
+          <a href="" class="btn-Transito">Transito de atlantico</a>
         </div>
+        <div class="service-image">
+          <img src="/images/credit_card.jpg" alt="" />
+          <div class="service-subimage">
+            <img
+              src="/images/service3.png"
+              alt=""
+              style="margin-bottom: 0.5vw"
+            />
+            <img src="/images/planing.jpg" alt="" style="margin-top: 0.5vw" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="nosotros-view view" style="display: none;">
+    <section class="nosotros-view view" style="display: none">
+      <div class="about-us mision">
+        <div class="mision-img" style="margin-right: 2vw">
+          <img src="/images/MISION.png" alt="" />
+          <img src="/images/MISION2.jpg" alt="" />
+        </div>
+        <div class="mision-content">
+          <h2>Misión</h2>
+          <br />
+          <p>
+            En Litis Legal ofrecemos respuestas legales eficientes y duraderas,
+            a través de un servicio comprometido, claro y centrado en la
+            rescuperación de valor de nuestros clientes.
+          </p>
+          <br />
+          <ul>
+            <li>Estrategias integrales ajustadas a cada situación.</li>
+            <li>Asesoría cercana, especializada y continua.</li>
+            <li>Claridad y honestidad en todo proceso.</li>
+            <li>Orientación a resultados concretos y sostenibles.</li>
+          </ul>
+        </div>
+      </div>
+              <br><br>
+      <div class="about-us vision">
+
+        <div class="vision-content">
+          <h2>Visión</h2>
+          <br />
+          <p>
+            En Litis legal buscamos ser referentes en la evolución del sector
+            legal, renovando la gestión de cobranza a través de la innovación
+            permanente. Respondemos a las dinámicas del mercado con herramientas
+            tecnologicas y metodologías que nos permiten entregar soluciones más
+            rapidas, eficientes y orientadas al cliente.
+          </p>
+          <br />
+          <ul>
+            <li>Actualización continua de procesos y enfoques.</li>
+            <li>Aplicación estratégica de tecnologías avanzadas.</li>
+            <li>Flexibilidad ante los cambios del entorno.</li>
+            <li>Atención prioritariaa las expectativas del cliente.</li>
+          </ul>
+        </div>
+        <div class="vision-img" style="margin-left: 2vw">
+          <img src="/images/VISION1.jpg" alt="" />
+          <img src="/images/VISION2.png" alt="" />
+        </div>
+      </div>
+      <section class="resultados">
+  <div class="metricas">
+    <h2>9,872</h2>
+    <p>Mensajes enviados y cientos de entidades asesoradas con efectividad comprobada.</p>
+  </div>
+
+  <div class="barras">
+    <div class="barra-resultado">
+      <p>Efectividad</p>
+      <div class="barra-externa">
+        <div class="barra-interna" style="width: 95%;">95%</div>
+      </div>
+    </div>
+
+    <div class="barra-resultado">
+      <p>Casos Resueltos</p>
+      <div class="barra-externa">
+        <div class="barra-interna" style="width: 90%;">90%</div>
+      </div>
+    </div>
+
+    <div class="barra-resultado">
+      <p>Recomendación de Nuestros Clientes</p>
+      <div class="barra-externa">
+        <div class="barra-interna" style="width: 93%;">93%</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="valores">
+  <h2 class="titulo-valores">Nuestros Valores</h2>
+  <div class="contenedor-valores">
+    <div class="valor">
+      <img src="/images/VISION1.jpg" alt="Confianza" />
+      <p>Confianza</p>
+    </div>
+    <div class="valor">
+      <img src="/images/valores2.jpg"/>
+      <p>Seguridad</p>
+    </div>
+    <div class="valor">
+      <img src="/images/valores3.jpg" alt="Enfoque Proactivo" />
+      <p>Enfoque Proactivo</p>
+    </div>
+    <div class="valor">
+      <img src="/images/VISION2.png" alt="Resultados" />
+      <p>Resultados Comprobados</p>
+    </div>
+  </div>
+  <section class="contacto" id="contacto">
+  <h2 class="contacto-titulo">Contacto</h2>
+  <p class="contacto-subtitulo">
+    ¿Necesitas asesoría o tienes alguna consulta?<br>
+    En <strong>Litis Legal</strong> estamos listos para escucharte. Contáctanos y descubre cómo podemos ayudarte con soluciones claras, confiables y a tu medida.
+  </p>
+  <form class="contacto-formulario">
+    <div class="fila">
+      <input type="text" placeholder="Nombre" required />
+      <input type="text" placeholder="Apellido" required />
+    </div>
+    <input type="email" placeholder="Correo Electrónico *" required />
+    <input type="text" placeholder="Asunto" />
+    <textarea placeholder="Mensaje *" rows="6" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+</section>
+
 
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Sobre Nosotros</h4>
-                <br>
-                <p>En <strong>Litis Legal</strong> brindamos asesoría jurídica confiable, estratégica y cercana. Nos
-                    especializamos en soluciones legales que generan Resultados
-                    reales y sostenibles para personas y empresas.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Destacado</h4>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Servicios</li>
-                    <li>Nosotros</li>
-                    <li>Resultados</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <ul>
-                    <li>Política de Privacidad</li>
-                    <li>Términos y condiciones</li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sobre Nosotros</h4>
+          <br />
+          <p>
+            En <strong>Litis Legal</strong> brindamos asesoría jurídica
+            confiable, estratégica y cercana. Nos especializamos en soluciones
+            legales que generan Resultados reales y sostenibles para personas y
+            empresas.
+          </p>
         </div>
-        <p class="copy">© 2025 Litis Legal</p>
+        <div class="footer-section">
+          <h4>Destacado</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Resultados</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <ul>
+            <li>Política de Privacidad</li>
+            <li>Términos y condiciones</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© 2025 Litis Legal</p>
     </footer>
+    <a href="https://wa.me/573112820346" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+  <div class="whatsapp-text">
+    ¿Necesitas ayuda?<br />
+    Chatea con nosotros
+  </div>
+  <img src="/images/wp.png" alt="WhatsApp" class="whatsapp-icon" />
+</a>
 
-</body>
-
+  </body>
 </html>
