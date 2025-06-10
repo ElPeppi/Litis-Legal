@@ -1,0 +1,129 @@
+.head {
+    margin: 0 20%;
+    display: flex;
+    padding: 2rem 0 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* separa extremos */
+    gap: 2rem;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.btn-menu:hover {
+    color: #FF6B00;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo {
+    width: 12vw;
+    height: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    display: flex;
+
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-contacto {
+    background-color: #FF6B00;
+    color: black;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+nav {
+    display: flex;
+    z-index: 5;
+}
+
+button:hover {
+    color: black;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+/* Ocultar botón de hamburguesa en desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 11;
+}
+
+/* Menú slider oculto por defecto */
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    border: none;
+  }
+
+  .logo{
+    width: 70%;
+    height: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100vw; /* Oculto fuera de pantalla */
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 10;
+  }
+
+  .nav-menu.open {
+    left: 0; /* Mostrar el menú */
+  }
+
+  .nav-menu a,
+  .nav-menu .btn-contacto {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+
+

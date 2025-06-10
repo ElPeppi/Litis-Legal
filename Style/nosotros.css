@@ -203,6 +203,7 @@
 }
 
 .contacto {
+    margin-top: 2rem;
     padding: 4rem 2rem;
     background-color: #ffffff;
     text-align: center;
@@ -264,4 +265,32 @@
 
 .contacto-formulario button:hover {
     background-color: #e65c00;
+}
+
+@media (max-width: 480px) {
+    .mision-img img{
+        width: auto;
+        height: 20vh;
+    }
+
+    .mision-content,
+    .vision-content {
+        width: 80vw;
+        text-align: left;
+        font-size: small;
+    }
+    .vision-img img {
+        width: 15vh;
+        height: 20vh;
+    }
+    .mision-content ul{
+        padding-left: 1rem;
+    }
+    .vision-content ul{
+        padding-left: 1rem;
+    }
+    
+    .valores {
+        padding: 2rem 1rem;
+    }
 }

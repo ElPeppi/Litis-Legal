@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="Style/styles.css" />
     <link rel="stylesheet" href="Style/service.css">
     <link rel="stylesheet" href="Style/nosotros.css" />
+    <link rel="stylesheet" href="Style/wpfixedbtn.css" />
+    <link rel="stylesheet" href="Style/menu.css" />
     <script src="/js/tabsDisplay.js"></script>
     <script src="/js/btnColor.js"></script>
+    <script src="/js/toggleMenu.js"></script>
     <link rel="icon" href="/images/logo.png" type="image/png" />
   </head>
 
@@ -16,34 +19,21 @@
     <!-- Header -->
     <header>
       <div class="head">
-        <img src="/images/logo.png" alt="logo" class="logo" />
+  
 
-        <nav>
-          <a
-            href="#"
-            onclick="showViews('.inicio-view'); changeButtonColor(this);"
-            class="btn-menu"
-            id="btn-inicio"
-            style="color: #ff6b00"
-            >Inicio</a
-          >
-          <a
-            href="#"
-            onclick="showViews('.servicios-view'); changeButtonColor(this);"
-            class="btn-menu"
-            id="btn-servicios"
-            >Servicios</a
-          >
-          <a
-            href="#"
-            onclick="showViews('.nosotros-view'); changeButtonColor(this);"
-            class="btn-menu"
-            id="btn-nosotros"
-            >Nosotros</a
-          >
-          <button href="#" class="btn-contacto">Contáctanos</button>
-        </nav>
-      </div>
+  <!-- Botón de menú móvil -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Menú slider -->
+  <nav class="nav-menu">
+    <img src="/images/logo.png" alt="logo" class="logo" />
+    <a href="#" onclick="showViews('.inicio-view'); changeButtonColor(this);" class="btn-menu" id="btn-inicio">Inicio</a>
+    <a href="#" onclick="showViews('.servicios-view'); changeButtonColor(this);" class="btn-menu" id="btn-servicios">Servicios</a>
+    <a href="#" onclick="showViews('.nosotros-view'); changeButtonColor(this);" class="btn-menu" id="btn-nosotros">Nosotros</a>
+    <button class="btn-contacto">Contáctanos</button>
+  </nav>
+</div>
+
 
       <div class="inicio-view view">
         <img src="/images/PORTADA.png" alt="portada" class="header-image" />
@@ -362,7 +352,6 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Resultados</a></li>
           </ul>
         </div>
         <div class="footer-section">

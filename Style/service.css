@@ -130,3 +130,27 @@
     border-radius: 15px;
     margin-left: 1vw;
 }
+
+@media (max-width: 480px) {
+    .head-container-servicios{
+        font-size: 1.5rem;
+    }
+    .service img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .service-content h2 {
+        font-size: 1.5rem;
+    }
+    .service-content {
+        font-size: 0.9rem;
+    }
+    .service-image img {
+        width: 30vw;
+        height: 45vw;
+    }
+    .service-subimage img {
+        width: 21.5vw;
+        height: 21.5vw;
+    }
+}
