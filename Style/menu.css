@@ -64,6 +64,7 @@ button:hover {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 /* Ocultar botón de hamburguesa en desktop */
 .menu-toggle {
   display: none;
@@ -89,7 +90,10 @@ button:hover {
     margin: 0 5%;
     border: none;
   }
-
+  .menu{
+    height: auto;
+    width: 50%;
+  }
   .logo{
     width: 70%;
     height: auto;
@@ -97,6 +101,12 @@ button:hover {
 
   .menu-toggle {
     display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 15;
+    background: #FFFF;
+    border-radius: 6px;
   }
 
   .nav-menu {
